@@ -23,10 +23,6 @@ function Footer() {
                                 </Link>
                             </li>
                             <li className={cx('item')}>
-                                <Place
-                                    sx={{ fontSize: 20, color: '#dc3a1a' }}
-                                />
-
                                 <a
                                     href="https://www.google.com/maps/place/CGV+Giga+Mall+Th%E1%BB%A7+%C4%90%E1%BB%A9c/@10.8275618,106.7210116,20.25z/data=!4m13!1m7!3m6!1s0x317528842f782221:0x3670cbfa60bbbcff!2zMjQyIFBo4bqhbSBWxINuIMSQ4buTbmcsIEhp4buHcCBCw6xuaCBDaMOhbmgsIFRo4bunIMSQ4bupYywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!3b1!8m2!3d10.8276003!4d106.7212132!3m4!1s0x31752930d4f0ef63:0xfeffcc189deddb5b!8m2!3d10.8277882!4d106.7216702?hl=vi-VN"
                                     target="_blank"
@@ -35,6 +31,9 @@ function Footer() {
                                 >
                                     Xem bản đồ của hàng
                                 </a>
+                                <Place
+                                    sx={{ fontSize: 20, color: '#dc3a1a' }}
+                                />
                             </li>
                         </ul>
                     </div>

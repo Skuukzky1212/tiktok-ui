@@ -23,7 +23,9 @@
 }
 
 .item {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -32,7 +34,7 @@
     .Link {
         display: inline-block;
         color: #e4e7eb;
-        margin-left: 6px;
+        margin-right: 6px;
     }
 }
 
