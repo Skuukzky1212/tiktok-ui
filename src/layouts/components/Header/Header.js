@@ -15,7 +15,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import routesConfig from '~/config/routesConfig';
+import config from '~/config';
 
 import styles from './Header.module.scss';
 import Button from '~/components/Button';
@@ -32,7 +32,7 @@ const MENU_ITEMS = [
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
         children: {
-            title: 'language',
+            title: 'Language',
             data: [
                 {
                     type: 'language',
@@ -100,13 +100,13 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <Link to={routesConfig.home} className={cx('logo-link')}>
+                    <Link to={config.routes.home} className={cx('logo-link')}>
                         <img src={images.logo} alt="tiktok-logo" />
                     </Link>
                 </div>
-                
+
                 <Search />
-                
+
                 <div className={cx('action')}>
                     {currentUser ? (
                         <>
